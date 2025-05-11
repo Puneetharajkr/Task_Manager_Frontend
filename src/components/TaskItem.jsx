@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { deleteTask, updateTask } from '../services/api';
+import './taskItem.css'
 
 
 
