@@ -38,7 +38,7 @@ function TaskItem({ task, onUpdate }) {
   };
 
   return (
-    <li className="list-group-item bg-secondary">
+    <li className="list-group-item bg-secondary text-white">
       {editing ? (
         <div className="row g-2">
           <div className="col-md-3">
@@ -88,7 +88,7 @@ function TaskItem({ task, onUpdate }) {
             <button onClick={handleUpdate} className="btn btn-success w-50">
               Save
             </button>
-            <button onClick={() => setEditing(false)} className="btn btn-secondary w-50">
+            <button onClick={() => setEditing(false)} className="btn btn-danger bg-danger w-50">
               Cancel
             </button>
           </div>
@@ -106,11 +106,11 @@ function TaskItem({ task, onUpdate }) {
           <div>
             <button
               onClick={() => setEditing(true)}
-              className="btn btn-sm btn-outline-primary me-2"
+              className="btn btn-sm btn-outline-sucess btn-primary me-2 text-white"
             >
               Edit
             </button>
-            <button onClick={handleDelete} className="btn btn-sm btn-outline-danger">
+            <button onClick={handleDelete} className="btn btn-sm btn-outline-warning btn-danger text-white">
               Delete
             </button>
           </div>
