@@ -38,7 +38,7 @@ function TaskItem({ task, onUpdate }) {
   };
 
   return (
-    <li className="list-group-item bg-info">
+    <li className="list-group-item bg-secondary">
       {editing ? (
         <div className="row g-2">
           <div className="col-md-3">
